@@ -11,6 +11,9 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.Toast;
+
+import com.madhouseapp.kidslearningapp.Utils.MessageUtil;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.
@@ -33,6 +36,9 @@ public class HomeActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_home);
 
+        Toast.makeText(getApplicationContext(), MessageUtil.MESSAGE_HOME_TO_START, Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(), MessageUtil.MESSAGE_HOME_OR, Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), MessageUtil.MESSAGE_HOME_TO_ABOUT_US, Toast.LENGTH_LONG).show();
 
         start_button = (Button) findViewById(R.id.start_button);
         about_us_button = (Button) findViewById(R.id.about_us_button);

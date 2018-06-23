@@ -26,4 +26,12 @@
     <color name="motard">#F7C74D</color>
 
     <color name="black_overlay">#66000000</color>
+
+
+    <!--OnBoard-->
+
+    <color name="selected_dot">#2D9CDB</color>
+    <color name="idle_dot">#662D9CDB</color>
+    <color name="ob_header">#4A4A4A</color>
+    <color name="ob_desc">#4A4A4A</color>
 </resources>

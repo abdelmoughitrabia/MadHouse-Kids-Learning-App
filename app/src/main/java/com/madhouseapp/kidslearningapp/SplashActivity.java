@@ -12,6 +12,8 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.madhouseapp.kidslearningapp.Onboard.OnBoardingActivity;
+
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -86,7 +88,7 @@ public class SplashActivity extends AppCompatActivity {
         timer.schedule(new TimerTask() {
             @Override
             public void run() {
-                startActivity(new Intent(getApplicationContext(), HomeActivity.class));
+                startActivity(new Intent(getApplicationContext(), OnBoardingActivity.class));
                 finish();
             }
         }, 3500);

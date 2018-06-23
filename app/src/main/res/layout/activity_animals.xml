@@ -59,14 +59,6 @@
 
     </LinearLayout>
 
-    <Button
-        android:id="@+id/homeAnimals"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Accueil"
-        tools:layout_editor_absoluteX="148dp"
-        tools:layout_editor_absoluteY="16dp" />
-
     <!--<com.google.android.gms.ads.AdView-->
     <!--android:id="@+id/animals_ad"-->
     <!--android:layout_width="match_parent"-->

@@ -37,10 +37,14 @@
         <activity android:name=".ObjectsActivity" />
         <activity android:name=".SpellingsActivity" />
         <activity
+            android:name=".Onboard.OnBoardingActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
             android:name=".HomeActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_home"
-            android:theme="@style/FullscreenTheme"></activity>
+            android:theme="@style/FullscreenTheme" />
+        <activity android:name=".AboutUsActivity"></activity>
     </application>
 
 </manifest>

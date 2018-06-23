@@ -55,7 +55,7 @@ public class ColorsActivity extends AppCompatActivity {
         previous = (Button) findViewById(R.id.previous_colors);
         play = (Button) findViewById(R.id.play_colors);
         next = (Button) findViewById(R.id.next_colors);
-        home = (Button) findViewById(R.id.homeAlphabets);
+//        home = (Button) findViewById(R.id.homeAlphabets);
 
         colorRecycler.setLayoutManager(centerZoomLayoutManager);
         colorRecycler.setItemAnimator(new DefaultItemAnimator());

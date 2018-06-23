@@ -64,7 +64,7 @@ public class AlphabetsActivity extends AppCompatActivity {
         previous = (Button) findViewById(R.id.previous_alphabets);
         play = (Button) findViewById(R.id.play_alphabets);
         next = (Button) findViewById(R.id.next_alphabets);
-        home = (Button) findViewById(R.id.homeAlphabets);
+//        home = (Button) findViewById(R.id.homeAlphabets);
 
         alphabetRecycler.setLayoutManager(centerZoomLayoutManager);
         alphabetRecycler.setItemAnimator(new DefaultItemAnimator());
@@ -107,13 +107,13 @@ public class AlphabetsActivity extends AppCompatActivity {
             }
         });
 
-        home.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(AlphabetsActivity.this, "home", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(getApplicationContext(), SplashActivity.class));
-            }
-        });
+//        home.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Toast.makeText(AlphabetsActivity.this, "home", Toast.LENGTH_SHORT).show();
+//                startActivity(new Intent(getApplicationContext(), SplashActivity.class));
+//            }
+//        });
     }
 
     private void initList() {

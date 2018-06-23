@@ -70,7 +70,7 @@ public class AnimalsActivity extends AppCompatActivity {
         previous = (Button) findViewById(R.id.previous_animals);
         play = (Button) findViewById(R.id.play_animals);
         next = (Button) findViewById(R.id.next_animals);
-        home = (Button) findViewById(R.id.homeAnimals);
+//        home = (Button) findViewById(R.id.homeAnimals);
 
         counter = Integer.MAX_VALUE / 2;
 
@@ -110,13 +110,13 @@ public class AnimalsActivity extends AppCompatActivity {
         });
 
 
-        home.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "home", Toast.LENGTH_SHORT).show();
-                startActivity(new Intent(getApplicationContext(), SplashActivity.class));
-            }
-        });
+//        home.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                Toast.makeText(getApplicationContext(), "home", Toast.LENGTH_SHORT).show();
+//                startActivity(new Intent(getApplicationContext(), SplashActivity.class));
+//            }
+//        });
     }
 
     private void initList() {
