@@ -55,7 +55,7 @@ public class ShapesAdapter extends RecyclerView.Adapter<ShapesAdapter.ShapesView
         ImageItem imageItem = imageItemList.get(pos);
         holder.name.setTypeface(jellyCrazies);
         holder.name.setText(imageItem.getName());
-        Picasso.with(context)
+        Picasso.get()
                 .load(imageItem.getImage())
                 .into(holder.image);
     }

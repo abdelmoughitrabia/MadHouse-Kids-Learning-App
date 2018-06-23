@@ -1,5 +1,6 @@
 package com.madhouseapp.kidslearningapp;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -12,8 +13,8 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.Toast;
 
-import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
 import com.madhouseapp.kidslearningapp.Adapters.AlphabetAdapter;
 import com.madhouseapp.kidslearningapp.Helper.CenterZoomLayoutManager;
@@ -30,7 +31,7 @@ public class AlphabetsActivity extends AppCompatActivity {
     private CenterZoomLayoutManager centerZoomLayoutManager;
     private AdView adView;
 
-    private Button previous, play, next;
+    private Button previous, play, next, home;
     private int counter = 0;
 
     private int[] sounds;
@@ -44,16 +45,15 @@ public class AlphabetsActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_alphabets);
-
         sounds = new int[]{R.raw.p, R.raw.q, R.raw.r, R.raw.s, R.raw.t, R.raw.u, R.raw.v, R.raw.w,
                 R.raw.x, R.raw.y, R.raw.z, R.raw.a, R.raw.b, R.raw.c, R.raw.d, R.raw.e, R.raw.f, R.raw.g, R.raw.h, R.raw.i, R.raw.j, R.raw.k,
                 R.raw.l, R.raw.m, R.raw.n, R.raw.o};
 
-        adView = (AdView) findViewById(R.id.alphabet_ad);
-        AdRequest adRequest = new AdRequest.Builder()
-                .tagForChildDirectedTreatment(true)
-                .build();
-        adView.loadAd(adRequest);
+//        adView = (AdView) findViewById(R.id.alphabet_ad);
+//        AdRequest adRequest = new AdRequest.Builder()
+//                .tagForChildDirectedTreatment(true)
+//                .build();
+//        adView.loadAd(adRequest);
 
         alphabetsList = new ArrayList<>();
         initList();
@@ -64,6 +64,7 @@ public class AlphabetsActivity extends AppCompatActivity {
         previous = (Button) findViewById(R.id.previous_alphabets);
         play = (Button) findViewById(R.id.play_alphabets);
         next = (Button) findViewById(R.id.next_alphabets);
+        home = (Button) findViewById(R.id.homeAlphabets);
 
         alphabetRecycler.setLayoutManager(centerZoomLayoutManager);
         alphabetRecycler.setItemAnimator(new DefaultItemAnimator());
@@ -103,6 +104,14 @@ public class AlphabetsActivity extends AppCompatActivity {
                 }
                 mediaPlayer = MediaPlayer.create(getApplicationContext(), sounds[pos]);
                 mediaPlayer.start();
+            }
+        });
+
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(AlphabetsActivity.this, "home", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getApplicationContext(), SplashActivity.class));
             }
         });
     }

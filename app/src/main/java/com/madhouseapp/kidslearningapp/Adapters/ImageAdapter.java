@@ -55,8 +55,9 @@ public class ImageAdapter extends RecyclerView.Adapter<ImageAdapter.ImageViewHol
         ImageItem imageItem = imageItemList.get(pos);
         holder.name.setTypeface(jellyCrazies);
         holder.name.setText(imageItem.getName());
-        Picasso.with(context)
+        Picasso.get()
                 .load(imageItem.getImage())
+//                .fit()
                 .into(holder.image);
     }
 

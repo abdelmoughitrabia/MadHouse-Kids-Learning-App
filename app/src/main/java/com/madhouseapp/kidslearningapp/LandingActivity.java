@@ -17,12 +17,15 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.madhouseapp.kidslearningapp.Adapters.CategoryAdapter;
 import com.madhouseapp.kidslearningapp.Object.CategoryItem;
 
 import java.util.ArrayList;
 import java.util.List;
+
+import static com.madhouseapp.kidslearningapp.Utils.MessageUtil.MESSAGE_SWIP;
 
 public class LandingActivity extends AppCompatActivity {
 
@@ -44,6 +47,7 @@ public class LandingActivity extends AppCompatActivity {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_landing);
+        Toast.makeText(getApplicationContext(), MESSAGE_SWIP, Toast.LENGTH_LONG).show();
 
         sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
         SharedPreferences.Editor editor = sharedPreferences.edit();
@@ -91,15 +95,15 @@ public class LandingActivity extends AppCompatActivity {
     }
 
     private void initList() {
-        categoryItemList.add(new CategoryItem("Alphabets", R.drawable.alphabet_a));
-        categoryItemList.add(new CategoryItem("Animals", R.drawable.tiger));
-        categoryItemList.add(new CategoryItem("Fruits", R.drawable.grape));
-        categoryItemList.add(new CategoryItem("Vegetables", R.drawable.cauli));
-        categoryItemList.add(new CategoryItem("Vehicles", R.drawable.aeroplane));
-        categoryItemList.add(new CategoryItem("Shapes", R.drawable.pyramid));
-        categoryItemList.add(new CategoryItem("Colors", R.drawable.colors_bg));
-        categoryItemList.add(new CategoryItem("Objects", R.drawable.desk_chair));
-        categoryItemList.add(new CategoryItem("Spellings", R.drawable.spelling_main));
+        categoryItemList.add(new CategoryItem("Alphabets", R.drawable.alphabet));
+        categoryItemList.add(new CategoryItem("Animals", R.drawable.animal));
+        categoryItemList.add(new CategoryItem("Fruits", R.drawable.fruits));
+        categoryItemList.add(new CategoryItem("Vegetables", R.drawable.vegetables));
+        categoryItemList.add(new CategoryItem("Vehicles", R.drawable.transport));
+        categoryItemList.add(new CategoryItem("Shapes", R.drawable.shapes));
+        categoryItemList.add(new CategoryItem("Colors", R.drawable.color));
+        categoryItemList.add(new CategoryItem("Objects", R.drawable.object));
+        categoryItemList.add(new CategoryItem("Spellings", R.drawable.spellingg));
     }
 
     @Override

@@ -1,5 +1,6 @@
 package com.madhouseapp.kidslearningapp;
 
+import android.content.Intent;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -12,6 +13,7 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.google.android.gms.ads.AdRequest;
 import com.google.android.gms.ads.AdView;
@@ -32,7 +34,7 @@ public class AnimalsActivity extends AppCompatActivity {
 
     private AdView adView;
 
-    private Button previous, play, next;
+    private Button previous, play, next, home;
     private int counter = 0;
 
     private MediaPlayer mediaPlayer;
@@ -50,14 +52,14 @@ public class AnimalsActivity extends AppCompatActivity {
         sounds = new int[]{R.raw.alligator, R.raw.bear, R.raw.elephant, R.raw.lion, R.raw.monkey, R.raw.panda, R.raw.rabbit,
                 R.raw.snake, R.raw.squirrel, R.raw.tiger, R.raw.zebra};
 
-        adView = (AdView) findViewById(R.id.animals_ad);
+//        adView = (AdView) findViewById(R.id.animals_ad);
         imageItemList = new ArrayList<>();
         initList();
         adapter = new ImageAdapter(this, imageItemList);
-        AdRequest adRequest = new AdRequest.Builder()
-                .tagForChildDirectedTreatment(true)
-                .build();
-        adView.loadAd(adRequest);
+//        AdRequest adRequest = new AdRequest.Builder()
+//                .tagForChildDirectedTreatment(true)
+//                .build();
+//        adView.loadAd(adRequest);
 
         animalRecycler = (RecyclerView) findViewById(R.id.recycler_animals);
         centerZoomLayoutManager = new CenterZoomLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
@@ -68,6 +70,7 @@ public class AnimalsActivity extends AppCompatActivity {
         previous = (Button) findViewById(R.id.previous_animals);
         play = (Button) findViewById(R.id.play_animals);
         next = (Button) findViewById(R.id.next_animals);
+        home = (Button) findViewById(R.id.homeAnimals);
 
         counter = Integer.MAX_VALUE / 2;
 
@@ -103,6 +106,15 @@ public class AnimalsActivity extends AppCompatActivity {
                 }
                 mediaPlayer = MediaPlayer.create(getApplicationContext(), sounds[pos]);
                 mediaPlayer.start();
+            }
+        });
+
+
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(), "home", Toast.LENGTH_SHORT).show();
+                startActivity(new Intent(getApplicationContext(), SplashActivity.class));
             }
         });
     }

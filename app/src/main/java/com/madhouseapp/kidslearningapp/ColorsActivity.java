@@ -25,7 +25,7 @@ public class ColorsActivity extends AppCompatActivity {
 
     private AdView adView;
 
-    private Button previous, play, next;
+    private Button previous, play, next, home;
     private int counter = 0;
     private int[] sounds;
     private MediaPlayer mediaPlayer;
@@ -39,11 +39,11 @@ public class ColorsActivity extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_colors);
 
-        adView = (AdView) findViewById(R.id.colors_ad);
-        AdRequest adRequest = new AdRequest.Builder()
-                .tagForChildDirectedTreatment(true)
-                .build();
-        adView.loadAd(adRequest);
+//        adView = (AdView) findViewById(R.id.colors_ad);
+//        AdRequest adRequest = new AdRequest.Builder()
+//                .tagForChildDirectedTreatment(true)
+//                .build();
+//        adView.loadAd(adRequest);
         sounds = new int[]{R.raw.red, R.raw.pink, R.raw.purple, R.raw.indigo, R.raw.blue, R.raw.sky_blue, R.raw.cyan, R.raw.teal,
                 R.raw.green, R.raw.lime, R.raw.yellow, R.raw.amber, R.raw.orange, R.raw.brown, R.raw.grey, R.raw.black, R.raw.white};
 
@@ -55,6 +55,7 @@ public class ColorsActivity extends AppCompatActivity {
         previous = (Button) findViewById(R.id.previous_colors);
         play = (Button) findViewById(R.id.play_colors);
         next = (Button) findViewById(R.id.next_colors);
+        home = (Button) findViewById(R.id.homeAlphabets);
 
         colorRecycler.setLayoutManager(centerZoomLayoutManager);
         colorRecycler.setItemAnimator(new DefaultItemAnimator());

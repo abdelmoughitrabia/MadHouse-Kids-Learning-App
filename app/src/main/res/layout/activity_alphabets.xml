@@ -60,16 +60,24 @@
 
     </LinearLayout>
 
-    <com.google.android.gms.ads.AdView
-        android:id="@+id/alphabet_ad"
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/homeAlphabets"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        ads:adSize="BANNER"
-        ads:adUnitId="@string/ad_id"
-        ads:layout_constraintLeft_toLeftOf="parent"
-        ads:layout_constraintRight_toRightOf="parent"
-        ads:layout_constraintTop_toTopOf="parent">
+        android:text="Accueil"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="16dp" />
 
-    </com.google.android.gms.ads.AdView>
+    <!--<com.google.android.gms.ads.AdView-->
+    <!--android:id="@+id/alphabet_ad"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--ads:adSize="BANNER"-->
+    <!--ads:adUnitId="@string/ad_id"-->
+    <!--ads:layout_constraintLeft_toLeftOf="parent"-->
+    <!--ads:layout_constraintRight_toRightOf="parent"-->
+    <!--ads:layout_constraintTop_toTopOf="parent">-->
+
+    <!--</com.google.android.gms.ads.AdView>-->
 
 </android.support.constraint.ConstraintLayout>
