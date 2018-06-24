@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+//import com.bumptech.glide.Glide;
 import com.madhouseapp.kidslearningapp.AlphabetsActivity;
 import com.madhouseapp.kidslearningapp.AnimalsActivity;
 import com.madhouseapp.kidslearningapp.ColorsActivity;
@@ -72,6 +73,8 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
                 .fit()
 //                .centerInside()
                 .into(holder.cat_image);
+
+
         int[] colorArray = {R.color.colorPrimary, R.color.lime, R.color.purple, R.color.teal, R.color.lightblue, R.color.brown};
         final int pos = position % colorArray.length;
         holder.cat_button.setBackgroundColor(ContextCompat.getColor(context, colorArray[pos]));

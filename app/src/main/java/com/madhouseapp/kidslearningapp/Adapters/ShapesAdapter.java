@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+//import com.bumptech.glide.Glide;
 import com.madhouseapp.kidslearningapp.Object.ImageItem;
 import com.madhouseapp.kidslearningapp.R;
 import com.squareup.picasso.Picasso;

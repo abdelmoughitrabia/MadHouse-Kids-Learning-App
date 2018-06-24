@@ -8,6 +8,7 @@ import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.LinearSnapHelper;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.SnapHelper;
+import android.util.Log;
 import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
@@ -103,8 +104,12 @@ public class ObjectsActivity extends AppCompatActivity {
                 if (mediaPlayer != null) {
                     mediaPlayer.release();
                 }
-                mediaPlayer = MediaPlayer.create(getApplicationContext(), sounds[pos]);
-                mediaPlayer.start();
+                try {
+                    mediaPlayer = MediaPlayer.create(getApplicationContext(), sounds[pos]);
+                    mediaPlayer.start();
+                } catch (Exception e) {
+                    Log.e("mediaExp", "hbéééééééééééés");
+                }
             }
         });
     }
