@@ -9,33 +9,42 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.ipmapp.kidzyapp.SplashActivity">
+        <activity android:name="com.ipmapp.kidzyapp.SplashActivity" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.ipmapp.kidzyapp.LandingActivity" />
+        <activity android:name="com.ipmapp.kidzyapp.LandingActivity" android:screenOrientation="portrait" />
         <activity
             android:name="com.ipmapp.kidzyapp.AlphabetsActivity"
+            android:screenOrientation="portrait"
             android:parentActivityName="com.ipmapp.kidzyapp.LandingActivity" />
         <activity
             android:name="com.ipmapp.kidzyapp.AnimalsActivity"
+            android:screenOrientation="portrait"
             android:parentActivityName="com.ipmapp.kidzyapp.LandingActivity" />
         <activity
             android:name="com.ipmapp.kidzyapp.FruitsActivity"
+            android:screenOrientation="portrait"
             android:parentActivityName="com.ipmapp.kidzyapp.LandingActivity" />
         <activity
             android:name="com.ipmapp.kidzyapp.VegetablesActivity"
+            android:screenOrientation="portrait"
             android:parentActivityName="com.ipmapp.kidzyapp.LandingActivity" />
         <activity
             android:name="com.ipmapp.kidzyapp.VehiclesActivity"
+            android:screenOrientation="portrait"
             android:parentActivityName="com.ipmapp.kidzyapp.LandingActivity" />
-        <activity android:name="com.ipmapp.kidzyapp.ShapesActivity" />
-        <activity android:name="com.ipmapp.kidzyapp.ColorsActivity" />
-        <activity android:name="com.ipmapp.kidzyapp.ObjectsActivity" />
-        <activity android:name="com.ipmapp.kidzyapp.SpellingsActivity" />
+        <activity android:name="com.ipmapp.kidzyapp.ShapesActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ipmapp.kidzyapp.ColorsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ipmapp.kidzyapp.ObjectsActivity"
+            android:screenOrientation="portrait"/>
+        <activity android:name="com.ipmapp.kidzyapp.SpellingsActivity"
+            android:screenOrientation="portrait"/>
         <activity
             android:name="com.ipmapp.kidzyapp.Onboard.OnBoardingActivity"
             android:screenOrientation="portrait"></activity>
@@ -43,8 +52,10 @@
             android:name="com.ipmapp.kidzyapp.HomeActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_home"
+            android:screenOrientation="portrait"
             android:theme="@style/FullscreenTheme" />
-        <activity android:name="com.ipmapp.kidzyapp.AboutUsActivity"></activity>
+        <activity android:name="com.ipmapp.kidzyapp.AboutUsActivity"
+            android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>
