@@ -13,6 +13,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 //import com.bumptech.glide.Glide;
+import com.bumptech.glide.Glide;
 import com.madhouseapp.kidslearningapp.AlphabetsActivity;
 import com.madhouseapp.kidslearningapp.AnimalsActivity;
 import com.madhouseapp.kidslearningapp.ColorsActivity;
@@ -68,9 +69,8 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
         CategoryItem categoryItem = categoryItemList.get(position);
         holder.cat_name.setTypeface(jellyCrazies);
         holder.cat_name.setText(categoryItem.getCat_name());
-        Picasso.get()
+        Glide.with(context)
                 .load(categoryItem.getCat_image())
-                .fit()
 //                .centerInside()
                 .into(holder.cat_image);
 
