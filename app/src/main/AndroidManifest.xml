@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.madhouseapp.kidslearningapp">
+    package="com.ipmapp.kidzyapp">
 
     <application
         android:allowBackup="true"
@@ -9,42 +9,42 @@
         android:roundIcon="@mipmap/ic_launcher"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".SplashActivity">
+        <activity android:name="com.ipmapp.kidzyapp.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".LandingActivity" />
+        <activity android:name="com.ipmapp.kidzyapp.LandingActivity" />
         <activity
-            android:name=".AlphabetsActivity"
-            android:parentActivityName=".LandingActivity" />
+            android:name="com.ipmapp.kidzyapp.AlphabetsActivity"
+            android:parentActivityName="com.ipmapp.kidzyapp.LandingActivity" />
         <activity
-            android:name=".AnimalsActivity"
-            android:parentActivityName=".LandingActivity" />
+            android:name="com.ipmapp.kidzyapp.AnimalsActivity"
+            android:parentActivityName="com.ipmapp.kidzyapp.LandingActivity" />
         <activity
-            android:name=".FruitsActivity"
-            android:parentActivityName=".LandingActivity" />
+            android:name="com.ipmapp.kidzyapp.FruitsActivity"
+            android:parentActivityName="com.ipmapp.kidzyapp.LandingActivity" />
         <activity
-            android:name=".VegetablesActivity"
-            android:parentActivityName=".LandingActivity" />
+            android:name="com.ipmapp.kidzyapp.VegetablesActivity"
+            android:parentActivityName="com.ipmapp.kidzyapp.LandingActivity" />
         <activity
-            android:name=".VehiclesActivity"
-            android:parentActivityName=".LandingActivity" />
-        <activity android:name=".ShapesActivity" />
-        <activity android:name=".ColorsActivity" />
-        <activity android:name=".ObjectsActivity" />
-        <activity android:name=".SpellingsActivity" />
+            android:name="com.ipmapp.kidzyapp.VehiclesActivity"
+            android:parentActivityName="com.ipmapp.kidzyapp.LandingActivity" />
+        <activity android:name="com.ipmapp.kidzyapp.ShapesActivity" />
+        <activity android:name="com.ipmapp.kidzyapp.ColorsActivity" />
+        <activity android:name="com.ipmapp.kidzyapp.ObjectsActivity" />
+        <activity android:name="com.ipmapp.kidzyapp.SpellingsActivity" />
         <activity
-            android:name=".Onboard.OnBoardingActivity"
+            android:name="com.ipmapp.kidzyapp.Onboard.OnBoardingActivity"
             android:screenOrientation="portrait"></activity>
         <activity
-            android:name=".HomeActivity"
+            android:name="com.ipmapp.kidzyapp.HomeActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/title_activity_home"
             android:theme="@style/FullscreenTheme" />
-        <activity android:name=".AboutUsActivity"></activity>
+        <activity android:name="com.ipmapp.kidzyapp.AboutUsActivity"></activity>
     </application>
 
 </manifest>

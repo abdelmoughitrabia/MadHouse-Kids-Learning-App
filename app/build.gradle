@@ -4,11 +4,11 @@ android {
     compileSdkVersion 26
     buildToolsVersion '27.0.3'
     defaultConfig {
-        applicationId "com.madhouseapp.kidslearningapp"
+        applicationId "com.ipmapp.kidzyapp"
         minSdkVersion 17
         targetSdkVersion 26
         versionCode 4
-        versionName "1.4"
+        versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {

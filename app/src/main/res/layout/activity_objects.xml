@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/bg_pattern"
-    tools:context="com.madhouseapp.kidslearningapp.ObjectsActivity">
+    tools:context="com.madhouseapp.kidslearningapp.com.ipmapp.kidzyapp.ObjectsActivity">
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/recycler_objects"
