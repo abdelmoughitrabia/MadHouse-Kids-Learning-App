@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 //import com.bumptech.glide.Glide;
 import com.ipmapp.kidzyapp.Object.ImageItem;
-import com.madhouseapp.kidslearningapp.R;
+import com.ipmapp.kidzyapp.R;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;

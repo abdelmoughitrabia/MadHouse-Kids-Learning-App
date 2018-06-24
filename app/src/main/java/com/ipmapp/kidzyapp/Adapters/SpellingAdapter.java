@@ -9,7 +9,7 @@ import android.view.ViewGroup;
 
 import com.ipmapp.kidzyapp.Helper.TypeWriterTextView;
 import com.ipmapp.kidzyapp.Object.AlphabetItem;
-import com.madhouseapp.kidslearningapp.R;
+import com.ipmapp.kidzyapp.R;
 
 import java.util.List;
 

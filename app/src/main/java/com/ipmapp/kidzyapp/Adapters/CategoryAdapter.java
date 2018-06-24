@@ -19,7 +19,7 @@ import com.ipmapp.kidzyapp.ColorsActivity;
 import com.ipmapp.kidzyapp.FruitsActivity;
 import com.ipmapp.kidzyapp.Object.CategoryItem;
 import com.ipmapp.kidzyapp.ObjectsActivity;
-import com.madhouseapp.kidslearningapp.R;
+import com.ipmapp.kidzyapp.R;
 import com.ipmapp.kidzyapp.ShapesActivity;
 import com.ipmapp.kidzyapp.SpellingsActivity;
 import com.ipmapp.kidzyapp.VegetablesActivity;

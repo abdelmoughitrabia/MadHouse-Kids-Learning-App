@@ -19,7 +19,7 @@ import com.google.android.gms.ads.AdView;
 import com.ipmapp.kidzyapp.Adapters.SpellingAdapter;
 import com.ipmapp.kidzyapp.Helper.CenterZoomLayoutManager;
 import com.ipmapp.kidzyapp.Object.AlphabetItem;
-import com.madhouseapp.kidslearningapp.R;
+import com.ipmapp.kidzyapp.R;
 
 import java.util.ArrayList;
 import java.util.List;

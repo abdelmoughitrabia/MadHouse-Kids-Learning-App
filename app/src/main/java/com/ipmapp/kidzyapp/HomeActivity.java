@@ -10,7 +10,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.ipmapp.kidzyapp.Utils.MessageUtil;
-import com.madhouseapp.kidslearningapp.R;
+import com.ipmapp.kidzyapp.R;
 
 /**
  * An example full-screen activity that shows and hides the system UI (i.e.

@@ -10,7 +10,7 @@ import android.view.View;
 import android.view.Window;
 import android.widget.Button;
 
-import com.madhouseapp.kidslearningapp.R;
+import com.ipmapp.kidzyapp.R;
 
 /**
  * Created by Younes on 11-12-2017.

@@ -17,7 +17,7 @@ import android.widget.Button;
 import com.google.android.gms.ads.AdView;
 import com.ipmapp.kidzyapp.Adapters.ColorsAdapter;
 import com.ipmapp.kidzyapp.Helper.CenterZoomLayoutManager;
-import com.madhouseapp.kidslearningapp.R;
+import com.ipmapp.kidzyapp.R;
 
 public class ColorsActivity extends AppCompatActivity {
     private RecyclerView colorRecycler;

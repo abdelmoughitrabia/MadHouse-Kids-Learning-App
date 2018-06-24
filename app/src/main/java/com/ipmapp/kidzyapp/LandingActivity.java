@@ -18,7 +18,7 @@ import android.widget.Toast;
 
 import com.ipmapp.kidzyapp.Adapters.CategoryAdapter;
 import com.ipmapp.kidzyapp.Object.CategoryItem;
-import com.madhouseapp.kidslearningapp.R;
+import com.ipmapp.kidzyapp.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -79,7 +79,7 @@ public class LandingActivity extends AppCompatActivity {
 //                Intent shareIntent = new Intent();
 //                shareIntent.setAction(Intent.ACTION_SEND);
 //                shareIntent.putExtra(Intent.EXTRA_TEXT,
-//                        "Hey, check out this amazing kids learning app at: https://play.google.com/store/apps/details?id=com.madhouseapp.kidslearningapp");
+//                        "Hey, check out this amazing kids learning app at: https://play.google.com/store/apps/details?id=com.ipmapp.kidzyapp");
 //                shareIntent.setType("text/plain");
 //                startActivity(shareIntent);
 //            }
@@ -87,7 +87,7 @@ public class LandingActivity extends AppCompatActivity {
 //        rate.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
-//                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.madhouseapp.kidslearningapp")));
+//                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.ipmapp.kidzyapp")));
 //            }
 //        });
     }

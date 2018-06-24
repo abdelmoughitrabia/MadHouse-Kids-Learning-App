@@ -13,7 +13,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.ipmapp.kidzyapp.Onboard.OnBoardingActivity;
-import com.madhouseapp.kidslearningapp.R;
+import com.ipmapp.kidzyapp.R;
 
 import java.util.Timer;
 import java.util.TimerTask;
