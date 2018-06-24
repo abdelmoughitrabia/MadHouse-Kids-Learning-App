@@ -14,7 +14,7 @@ import com.madhouseapp.kidslearningapp.R;
 import java.util.List;
 
 /**
- * Created by Akshansh on 11-10-2017.
+ * Created by Younes on 11-10-2017.
  */
 
 public class SpellingAdapter extends RecyclerView.Adapter<SpellingAdapter.SpellingViewHolder> {

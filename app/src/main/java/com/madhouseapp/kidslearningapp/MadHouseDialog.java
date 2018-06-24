@@ -11,7 +11,7 @@ import android.view.Window;
 import android.widget.Button;
 
 /**
- * Created by Akshansh on 11-12-2017.
+ * Created by Younes on 11-12-2017.
  */
 
 public class MadHouseDialog extends Dialog {

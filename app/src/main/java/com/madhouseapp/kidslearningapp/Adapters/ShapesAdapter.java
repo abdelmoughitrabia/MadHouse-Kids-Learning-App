@@ -10,7 +10,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 //import com.bumptech.glide.Glide;
-import com.bumptech.glide.Glide;
 import com.madhouseapp.kidslearningapp.Object.ImageItem;
 import com.madhouseapp.kidslearningapp.R;
 import com.squareup.picasso.Picasso;
@@ -18,7 +17,7 @@ import com.squareup.picasso.Picasso;
 import java.util.List;
 
 /**
- * Created by Akshansh on 11-10-2017.
+ * Created by Younes on 11-10-2017.
  */
 
 public class ShapesAdapter extends RecyclerView.Adapter<ShapesAdapter.ShapesViewHolder> {
@@ -57,7 +56,7 @@ public class ShapesAdapter extends RecyclerView.Adapter<ShapesAdapter.ShapesView
         ImageItem imageItem = imageItemList.get(pos);
         holder.name.setTypeface(jellyCrazies);
         holder.name.setText(imageItem.getName());
-        Glide.with(context)
+        Picasso.get()
                 .load(imageItem.getImage())
                 .into(holder.image);
     }

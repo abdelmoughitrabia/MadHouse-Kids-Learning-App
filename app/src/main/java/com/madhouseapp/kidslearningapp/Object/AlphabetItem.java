@@ -1,7 +1,7 @@
 package com.madhouseapp.kidslearningapp.Object;
 
 /**
- * Created by Akshansh on 05-10-2017.
+ * Created by Younes.
  */
 
 public class AlphabetItem {

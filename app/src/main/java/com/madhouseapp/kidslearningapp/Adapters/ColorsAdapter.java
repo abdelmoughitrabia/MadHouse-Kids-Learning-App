@@ -17,7 +17,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * Created by Hemant on 10/9/2017.
+ * Created by Younes on 10/9/2017.
  */
 
 public class ColorsAdapter extends RecyclerView.Adapter<ColorsAdapter.ColorViewHolder> {

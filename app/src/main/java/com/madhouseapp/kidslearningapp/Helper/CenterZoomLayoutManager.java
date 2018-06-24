@@ -6,7 +6,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.View;
 
 /**
- * Created by Hemant on 30-09-2017.
+ * Created by Younes.
  */
 
 public class CenterZoomLayoutManager extends LinearLayoutManager {

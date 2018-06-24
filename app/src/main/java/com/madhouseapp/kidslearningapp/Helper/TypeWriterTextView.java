@@ -6,7 +6,7 @@ import android.util.AttributeSet;
 import android.widget.TextView;
 
 /**
- * Created by Akshansh on 10-10-2017.
+ * Created by Younes on 10-10-2017.
  */
 
 public class TypeWriterTextView extends TextView {

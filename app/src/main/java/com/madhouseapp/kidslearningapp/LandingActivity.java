@@ -73,25 +73,25 @@ public class LandingActivity extends AppCompatActivity {
         SnapHelper snapHelper = new LinearSnapHelper();
         snapHelper.attachToRecyclerView(categoryRecycler);
 
-        share = (ImageView) findViewById(R.id.share_app);
-        rate = (ImageView) findViewById(R.id.rate_app);
-        share.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent shareIntent = new Intent();
-                shareIntent.setAction(Intent.ACTION_SEND);
-                shareIntent.putExtra(Intent.EXTRA_TEXT,
-                        "Hey, check out this amazing kids learning app at: https://play.google.com/store/apps/details?id=com.madhouseapp.kidslearningapp");
-                shareIntent.setType("text/plain");
-                startActivity(shareIntent);
-            }
-        });
-        rate.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.madhouseapp.kidslearningapp")));
-            }
-        });
+//        share = (ImageView) findViewById(R.id.share_app);
+//        rate = (ImageView) findViewById(R.id.rate_app);
+//        share.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                Intent shareIntent = new Intent();
+//                shareIntent.setAction(Intent.ACTION_SEND);
+//                shareIntent.putExtra(Intent.EXTRA_TEXT,
+//                        "Hey, check out this amazing kids learning app at: https://play.google.com/store/apps/details?id=com.madhouseapp.kidslearningapp");
+//                shareIntent.setType("text/plain");
+//                startActivity(shareIntent);
+//            }
+//        });
+//        rate.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                startActivity(new Intent(Intent.ACTION_VIEW, Uri.parse("https://play.google.com/store/apps/details?id=com.madhouseapp.kidslearningapp")));
+//            }
+//        });
     }
 
     private void initList() {

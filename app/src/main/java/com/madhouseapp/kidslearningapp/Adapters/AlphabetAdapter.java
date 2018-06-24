@@ -14,7 +14,7 @@ import com.madhouseapp.kidslearningapp.R;
 import java.util.List;
 
 /**
- * Created by Akshansh on 05-10-2017.
+ * Created by Younes.
  */
 
 public class AlphabetAdapter extends RecyclerView.Adapter<AlphabetAdapter.AlphabetViewHolder> {
