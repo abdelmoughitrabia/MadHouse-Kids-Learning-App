@@ -33,9 +33,9 @@ public class HomeActivity extends AppCompatActivity {
 
         setContentView(R.layout.activity_home);
 
-        Toast.makeText(getApplicationContext(), MessageUtil.MESSAGE_HOME_TO_START, Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(), MessageUtil.MESSAGE_HOME_TO_START, Toast.LENGTH_SHORT).show();
         Toast.makeText(getApplicationContext(), MessageUtil.MESSAGE_HOME_OR, Toast.LENGTH_SHORT).show();
-        Toast.makeText(getApplicationContext(), MessageUtil.MESSAGE_HOME_TO_ABOUT_US, Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(), MessageUtil.MESSAGE_HOME_TO_ABOUT_US, Toast.LENGTH_SHORT).show();
 
         start_button = (Button) findViewById(R.id.start_button);
         about_us_button = (Button) findViewById(R.id.about_us_button);
@@ -50,7 +50,7 @@ public class HomeActivity extends AppCompatActivity {
         about_us_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), LandingActivity.class));
+                startActivity(new Intent(getApplicationContext(), AboutUsActivity.class));
             }
         });
     }
